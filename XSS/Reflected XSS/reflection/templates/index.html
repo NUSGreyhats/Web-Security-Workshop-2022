@@ -1,0 +1,28 @@
+{% extends 'base.html' %} {% block title %}Lambda Admin Report {% endblock %} {%
+block content %}
+<h1>HTML renderer</h1>
+<p>We render html for you to preview</p>
+<form method="post">
+  <div class="mb-3">
+    <label for="report" class="form-label">HTML</label>
+    <textarea
+      name="content"
+      type="text"
+      class="form-control"
+      id="report"
+      placeholder="Report"
+    ></textarea>
+  </div>
+  <div class="mb-3">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+  <div id="preview"></div>
+  <script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const content = urlParams.get("content") ?? '';
+    const contentDiv = document.createRange().createContextualFragment(content);
+    document.getElementById("preview").append(contentDiv);
+  </script>
+</form>
+{% endblock %}
