@@ -8,30 +8,30 @@ services:
       - "3001:2776"
 
   sqli:
-    build: ./SQLi/
+    build: ./SQLi/basic
     ports:
       - "3002:2776"
 
   rxss:
     container_name: rxss
-    build: ./XSS/Reflected XSS/reflection
+    build: ./XSS/reflection
     ports:
       - "3003:2776"
 
   sxss-admin:
     container_name: sxss-admin
-    build: ./XSS/Stored XSS/getting the admin
+    build: ./XSS/getting the admin
     ports:
       - "3004:2776"
   
   sxss-staff:
     container_name: sxss-staff
-    build: ./XSS/Stored XSS/getting the staff cookies
+    build: ./XSS/getting the staff cookies
     ports:
       - "3005:2776"
 
   os-cmd-inj:
-    build: ./OS Cmd Inj/
+    build: ./OS Cmd Inj/basic
     read_only: true
     tmpfs: /tmp
     ports:

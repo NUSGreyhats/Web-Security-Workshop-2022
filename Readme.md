@@ -10,12 +10,19 @@ A simple web security workshop to discuss the fundamentals of different web vuln
 
 The challenges should be up now at the following addresses:
 
-1. Local File Inclusion: [localhost:3001](http://localhost:3001)
-2. SQL Injection [localhost:3002](http://localhost:3002)
-3. Reflected XSS [localhost:3003](http://localhost:3003)
-4. Stored XSS 1 [localhost:3004](http://localhost:3004)
-5. Stored XSS 2 [localhost:3005](http://localhost:3005)
-6. OS Command Injection [localhost:3006](http://localhost:3006)
+### Local File Inclusion
+1. Exporting Data on Inspector Gadget: [localhost:3001](http://localhost:3001)
+
+### SQL Injection
+2. Basic: [localhost:3002](http://localhost:3002)
+
+### XSS
+3. Reflection: [localhost:3003](http://localhost:3003)
+4. Getting the Staff cookies: [localhost:3004](http://localhost:3004)
+5. Getting the admin: [localhost:3005](http://localhost:3005)
+
+### OS Command Injection
+6. Basic: [localhost:3006](http://localhost:3006)
 
 ### Prerequisites
 
