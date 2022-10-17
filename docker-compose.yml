@@ -26,6 +26,6 @@ services:
   
   sxss-staff:
     container_name: sxss-staff
-    build: ./XSS/Stored XSS/getting the staff
+    build: ./XSS/Stored XSS/getting the staff cookies
     ports:
       - "3005:2776"

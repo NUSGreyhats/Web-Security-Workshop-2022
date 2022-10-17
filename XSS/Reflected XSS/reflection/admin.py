@@ -23,9 +23,11 @@ def _visit(base_url: str, link: str) -> str:
     with webdriver.Chrome(ChromeDriverManager().install(), options=options) as driver:
         try:
             driver.get(base_url)
-            cookie = {"name": "flag", "value": COOKIE["flag"]}
+            cookie = {
+                "name": "flag",
+                "value": COOKIE["flag"],
+            }
             driver.add_cookie(cookie)
-            driver.get(base_url)
             driver.get(link)
             print(f"Visited {link}")
         except Exception as e:
