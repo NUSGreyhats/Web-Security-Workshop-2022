@@ -1,0 +1,31 @@
+version: '3.7'
+
+services:
+
+  lfi:
+    build: ./LFI/exporting data on inspector gadget/
+    ports:
+      - "3001:2776"
+
+  sqli:
+    build: ./SQLi/
+    ports:
+      - "3002:2776"
+
+  rxss:
+    container_name: rxss
+    build: ./XSS/Reflected XSS/reflection
+    ports:
+      - "3003:2776"
+
+  sxss-admin:
+    container_name: sxss-admin
+    build: ./XSS/Stored XSS/getting the admin
+    ports:
+      - "3004:2776"
+  
+  sxss-staff:
+    container_name: sxss-staff
+    build: ./XSS/Stored XSS/getting the staff
+    ports:
+      - "3005:2776"

@@ -12,7 +12,7 @@ RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.d
 RUN apt install -y ./google-chrome-stable_current_amd64.deb
 
 # Set environment variables
-ENV CTF_FLAG "greyhats{4dm1n_cr3d5_acqu1r3d}"
+ENV CTF_FLAG "greyhats{r33fl3ct10n_15_b4d_h3r3}"
 
 # Copy files
 COPY . .

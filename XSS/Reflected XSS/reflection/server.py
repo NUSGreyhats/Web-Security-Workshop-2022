@@ -12,8 +12,8 @@ def index() -> str:
         return render_template("index.html")
 
     args = request.form
-    content = args.get("content")
+    content = args.get("content", "")
     query_args = f"?content={quote(content)}"
 
-    visit(request.base_url, request.base_url + query_args)
+    visit("http://rxss:2776", "http://rxss:2776" + query_args)
     return redirect(f"/{query_args}")

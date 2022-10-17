@@ -56,7 +56,7 @@ def index() -> str:
     cursor.execute("INSERT INTO reports VALUES (?, ?)", (report_id, sanitize(report)))
     db.commit()
 
-    return_msg = visit(request.base_url, f"{WEB_LOCATION}/report/{report_id}")
+    return_msg = visit("http://sxss-admin:2776", f"http://sxss-admin:2776/report/{report_id}")
 
     logging.info(f"Visit message: {return_msg}")
     return redirect(f"/report/{report_id}")

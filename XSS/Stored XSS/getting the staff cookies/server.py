@@ -48,7 +48,7 @@ def index() -> str:
     cursor = db.cursor()
     cursor.execute("INSERT INTO reports VALUES (?, ?)", (report_id, report))
     db.commit()
-    visit(request.base_url, f"http://127.0.0.1:2776/report/{report_id}")
+    visit("http://sxss-staff:2776", f"http://sxss-staff:2776/report/{report_id}")
     return redirect(f"/report/{report_id}")
 
 
