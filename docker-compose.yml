@@ -29,3 +29,10 @@ services:
     build: ./XSS/Stored XSS/getting the staff cookies
     ports:
       - "3005:2776"
+
+  os-cmd-inj:
+    build: ./OS Cmd Inj/
+    read_only: true
+    tmpfs: /tmp
+    ports:
+      - "3006:2776"
