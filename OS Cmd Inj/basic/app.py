@@ -1,8 +1,9 @@
 import os
-from flask import Flask, redirect, render_template, request
+from constants import SECRET
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
-app.secret_key = "thisIsARandomSecretKey"
+app.secret_key = SECRET
 
 @app.route("/", methods=['GET', 'POST'])
 def index():
