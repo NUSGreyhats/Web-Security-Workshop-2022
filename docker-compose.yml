@@ -48,3 +48,10 @@ services:
     tmpfs: /tmp
     ports:
       - "3007:2776"
+
+  worker-union:
+    build: ./SQLi/Worker's Union
+    read_only: true
+    tmpfs: /tmp
+    ports:
+      - "3008:2776"

