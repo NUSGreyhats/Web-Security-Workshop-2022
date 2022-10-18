@@ -2,13 +2,6 @@ version: '3.7'
 
 services:
 
-  CTFd:
-    image: ctfd/ctfd
-    container_name: CTFd
-    restart: always
-    ports:
-      - 80:8000
-
   lfi-basic:
     build: ./LFI/basic/
     ports:
