@@ -41,3 +41,10 @@ services:
     tmpfs: /tmp
     ports:
       - "3006:2776"
+
+  safe-cmd:
+    build: ./OS Cmd Inj/safe cmd
+    read_only: true
+    tmpfs: /tmp
+    ports:
+      - "3007:2776"
